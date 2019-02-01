@@ -77,10 +77,15 @@ public class ShapeCollection{
      public static void main(String []args){
 
         ArrayList<Shape> shapes = new ArrayList<Shape>();
+        
+        System.out.println("Creating a blue triangle with area 4");
         shapes.add(new Triangle("blue", 4));
+        System.out.println("Creating a green square with area 3");
         shapes.add(new Square("green", 3));
+        System.out.println("Creating a red circle with area 5");
         shapes.add(new Circle("red", 5));
 
+        System.out.println("Sorting shapes...");
         Collections.sort(shapes);
 
         shapes.forEach(shape -> shape.display());
